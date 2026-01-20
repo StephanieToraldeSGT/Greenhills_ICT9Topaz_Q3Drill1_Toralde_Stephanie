@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.8">
+    <title>Q3 Drill 1</title>
+</head>
+<style>
+    body {
+        background: #ffffff url(https://cdn.pixabay.com/photo/2015/08/07/03/56/paper-878961_1280.png) center center/cover no-repeat fixed;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+    .my-box {
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+        margin: 10px auto;
+        background-color: rgb(188, 247, 255);
+        border: 10px double aquamarine;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="my-box">
+        <h1 style="font-family: monospace;">Basic Calculator</h1>
+        <form>
+            <input type="number" id="num1" placeholder="Enter the first number"><br>
+            <input type="number" id="num2" placeholder="Enter the second number"><br>
+            <input type="button" onclick="add()" value="Add">
+            <input type="button" onclick="subtract()" value="Subtract">
+            <input type="button" onclick="multiply()" value="Multiply">
+            <input type="button" onclick="divide()" value="Divide">
+        </form>
+        <div id="output" style="color: aquamarine; font-size: 21px;">
+            <script src="main.js"></script>
+        </div>
+</body>
+
+</html>
